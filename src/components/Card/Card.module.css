@@ -1,0 +1,49 @@
+
+.card {
+  width: 90%; 
+  max-width: 350px;
+  box-sizing: border-box;
+  background-color: #fdfbf5;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0;
+  border: 1px solid #c9a87c;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cardTitle {
+  margin-top: 0;
+  color: #5a3a22;
+  font-family: 'Georgia', serif;
+  border-bottom: 1px solid #dcd0b9;
+  padding-bottom: 8px;
+}
+
+.cardDescription {
+  color: #6d4c41; 
+  font-size: 14px;
+  line-height: 1.5; 
+}
+
+.cardImage {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto 15px; 
+
+  opacity: 0.75; 
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 260px; 
+    margin: 10px;
+  }
+}
+

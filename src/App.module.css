@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; 
+  font-family: Arial, sans-serif;
+  position: relative; 
+  overflow: hidden; 
+  padding: 10px; 
+}
+
+.bgIcon {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  .bgIcon {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    opacity: 0.15;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .iconSword {
+    top: 20%;
+    left: 15%;
+  }
+  .iconShield {
+    bottom: 15%;
+    right: 10%;
+  }
+
+  .bgIcon:hover {
+    opacity: 0.4;
+    transform: scale(1.1) rotate(-5deg);
+    cursor: url(./assets/espada-cursor.png), pointer;
+  }
+}

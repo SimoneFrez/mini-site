@@ -1,0 +1,55 @@
+
+.loginContainer {
+
+  width: 90%;
+  max-width: 350px; 
+  box-sizing: border-box;   
+  padding: 25px; 
+  background-color: #fdfbf5; 
+  border-radius: 8px;
+  border: 2px solid #8b4513; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  color: #5a3a22; 
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: 'Georgia', serif;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6d4c41;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.flavorText {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.loginIcon {
+  display: block; 
+  width: 70px;  
+  height: 70px;
+  margin: 0 auto 15px;  
+  transition: transform 0.3s ease-in-out;
+}
+.loginIcon:hover {
+  transform: rotate(45deg) scale(1.1); 
+  cursor: url(../../assets/espada-cursor.png), pointer; 
+}
+
+@media (min-width: 768px) {
+  .loginContainer {
+    width: 350px; 
+    padding: 30px;
+  }
+}
