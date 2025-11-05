@@ -1,16 +1,66 @@
-# React + Vite
+🐲 Portal da Guilda - Mini-Site Temático de D&D
+Status do Projeto: 🎲 Concluído e no ar! 🎲
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[➡️ Acesse a Aventura Ao Vivo Aqui ⬅️](https://simonefrez.github.io/mini-site/)
+📖 Sobre esta Aventura
+Bem-vindo, viajante! O Portal da Guilda é um mini-site em React que simula a entrada em um sistema de missões de Dungeons & Dragons.
 
-Currently, two official plugins are available:
+Este projeto foi desenvolvido como um exercício prático para iniciantes em React, mas com um foco obsessivo nos detalhes e na imersão. O objetivo não era apenas criar duas telas, mas sim criar uma experiência. A prova de que componentes reutilizáveis e estilização podem contar uma história.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features da Guilda (Os Detalhes)
+O que faz este projeto ser mais do que um "clone":
 
-## React Compiler
+Tema Imersivo: Toda a interface, das cores aos textos, foi pensada para parecer uma taverna ou um antigo portal de guilda.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Componentes Reutilizáveis: O projeto é construído em Inputs, Buttons e Cards que são usados para montar as telas de Login ("Portal") e Home ("Mural de Missões").
 
-## Expanding the ESLint configuration
+Interatividade Total:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cursor Personalizado: Um cursor de espada ⚔️ que aparece ao interagir com os elementos principais.
+
+Ícones de Fundo: O fundo da tela tem ícones que reagem sutilmente ao hover do mouse.
+
+Micro-interações: Ícones e botões giram, aumentam e mudam de opacidade, dando vida à página.
+
+CSS Modules: Cada componente tem seu próprio estilo encapsulado, evitando conflitos e mantendo o código limpo.
+
+Design "Mobile-First": Totalmente responsivo. A experiência no celular foi a prioridade, e o layout se adapta para telas maiores.
+
+Navegação por Estado: A transição entre a tela de Login e a Home é controlada de forma limpa e eficiente com o hook useState do React.
+
+🎬 O Projeto em Ação
+[Demonstração do Portal da Guilda](./src/assets/demo-projeto.gif)
+
+⚒️ Ferramentas Forjadas (Tech Stack)
+React (com useState para controle de estado)
+
+Vite (como ferramenta de build)
+
+CSS Modules (para estilização)
+
+GitHub Pages (para o deploy)
+
+📜 Como Iniciar a Aventura Localmente
+Caso queira clonar este projeto e ver o código-fonte:
+
+Clone o grimório (repositório):
+
+Bash
+
+git clone https://github.com/SimoneFrez/mini-site
+Entre na taverna (pasta do projeto):
+
+Bash
+
+cd mini-site
+Instale os suprimentos (dependências):
+
+Bash
+
+npm install
+Lance o feitiço (rode o projeto):
+
+Bash
+
+npm run dev
+Que seus dados rolem 20.
