@@ -29,7 +29,7 @@ Design "Mobile-First": Totalmente responsivo. A experiência no celular foi a pr
 Navegação por Estado: A transição entre a tela de Login e a Home é controlada de forma limpa e eficiente com o hook useState do React.
 
 🎬 O Projeto em Ação
-[Demonstração do Portal da Guilda](./src/assets/demo-projeto.gif)
+![Demonstração do Portal da Guilda](./src/assets/demo-projeto.gif)
 
 ⚒️ Ferramentas Forjadas (Tech Stack)
 React (com useState para controle de estado)
