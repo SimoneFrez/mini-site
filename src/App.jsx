@@ -9,7 +9,7 @@ function App() {
   
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const handleLogingSucess = () => {
+  const handleLogingSuccess = () => {
     setIsLoggedIn(true);
   }
 
@@ -26,7 +26,7 @@ function App() {
         alt="Ícone de escudo" 
         className={`${styles.bgIcon} ${styles.iconShield}`} 
       />
-      
+
       {isLoggedIn ? (
         <Home />
       ) : (
