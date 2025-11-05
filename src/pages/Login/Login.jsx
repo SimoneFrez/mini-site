@@ -4,13 +4,12 @@ import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
 import d20Icon from '../../assets/dragon-d20.jpg'; 
 
-const Login = () => {
+const Login = ({onLoginSucess}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLoginClick = () => {
     console.log(`Aventureiro: ${email}, Senha: ${password}`);
-    alert('Portal aberto! (ver console)');
   };
 
   return (

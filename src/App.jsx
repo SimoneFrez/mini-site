@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from './App.module.css';
 import Login from './pages/Login/Login';
 import Home from './pages/Home/Home';
@@ -6,6 +7,12 @@ import shieldIcon from './assets/espada-icon.png';
 
 function App() {
   
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogingSucess = () => {
+    setIsLoggedIn(true);
+  }
+
   return (
     <div className={styles.container}>
 
@@ -19,10 +26,12 @@ function App() {
         alt="Ícone de escudo" 
         className={`${styles.bgIcon} ${styles.iconShield}`} 
       />
-    
-      <Login />
-
-      {/* <Home /> */}
+      
+      {isLoggedIn ? (
+        <Home />
+      ) : (
+            <Login onLoginSuccess={handleLoginSuccess} />
+      )}
 
     </div>
   );
