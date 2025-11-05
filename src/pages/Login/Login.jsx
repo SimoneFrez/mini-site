@@ -15,13 +15,11 @@ const Login = ({ onLoginSuccess }) => {
 
   return (
     <div className={styles.loginContainer}>
-
       <img 
         src={d20Icon} 
         alt="Ícone de um dado D20" 
         className={styles.loginIcon} 
       />
-
       <h2 className={styles.title}>Portal da Guilda</h2>
       <p className={styles.subtitle}>Identifique-se, viajante!</p>
       

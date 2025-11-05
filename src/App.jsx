@@ -6,35 +6,32 @@ import swordIcon from './assets/poison-icon.png';
 import shieldIcon from './assets/espada-icon.png';
 
 function App() {
-  
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const handleLoginSuccess = () => {
-    setIsLoggedIn(true);
-  }
+  const handleLoginSuccess = () => {
+    setIsLoggedIn(true);
+  };
 
-  return (
-    <div className={styles.container}>
+  return (
+    <div className={styles.container}>
+      <img 
+        src={swordIcon} 
+        alt="Ícone de espada" 
+        className={`${styles.bgIcon} ${styles.iconSword}`} 
+      />
+      <img 
+        src={shieldIcon} 
+        alt="Ícone de escudo" 
+        className={`${styles.bgIcon} ${styles.iconShield}`} 
+      />
 
-      <img 
-        src={swordIcon} 
-        alt="Ícone de espada" 
-        className={`${styles.bgIcon} ${styles.iconSword}`} 
-      />
-      <img 
-        src={shieldIcon} 
-        alt="Ícone de escudo" 
-        className={`${styles.bgIcon} ${styles.iconShield}`} 
-      />
-
-      {isLoggedIn ? (
-        <Home />
-      ) : (
-            <Login onLoginSuccess={handleLoginSuccess} />
-      )}
-
-    </div>
-  );
+      {isLoggedIn ? (
+        <Home />
+      ) : (
+        <Login onLoginSuccess={handleLoginSuccess} />
+      )}
+    </div>
+  );
 }
 
 export default App;
